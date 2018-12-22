@@ -1,12 +1,14 @@
-if (!require(shiny)){install.packages("shiny")}
-if (!require(udpipe)){install.packages("udpipe")}
-if (!require(stringr)){install.packages("stringr")}
-if (!require(lattice)){install.packages("lattice")}
-if (!require(igraph)){install.packages("igraph")}
-if (!require(ggraph)){install.packages("ggraph")}
-if (!require(readtext)){install.packages("readtext")}
-if (!require(textrank)){install.packages("textrank")}
-if (!require(wordcloud)){install.packages("wordcloud")}
+try (!require(shiny)||install.packages("shiny"))
+try (!require(udpipe)||install.packages("udpipe"))
+try (!require(stringr)||install.packages("stringr"))
+try (!require(lattice)||install.packages("lattice"))
+try (!require(igraph)||install.packages("igraph"))
+try (!require(ggraph)||install.packages("ggraph"))
+try (!require(readtext)||install.packages("readtext"))
+try (!require(textrank)||install.packages("textrank"))
+try (!require(wordcloud)||install.packages("wordcloud"))
+
+
 library(shiny)
 library(udpipe)
 library(textrank)
@@ -16,4 +18,3 @@ library(ggraph)
 library(ggplot2)
 library(wordcloud)
 library(stringr)
-
